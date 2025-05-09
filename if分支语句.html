@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    //if单分支
+    //除了0以外的数字都为true
+    //除了空字符串以外的字符串都为true
+    //除了null以外的对象都为true
+    //除了undefined以外的对象都为true
+    //小案例
+    // let score = Number(prompt('请输入成绩'))
+    // if (score >= 700) {
+    //   alert('恭喜你通过考试')
+    // }
+
+    //if双分支
+    // 小案例
+    // let userName = 'admin'
+    // let passWord = '123'
+    // let userNameInput = prompt('请输入用户名')
+    // let passWordInput = prompt('请输入密码')
+    // if (userNameInput === userName && passWordInput === passWord) {
+    //   alert('登录成功')
+    // } else {
+    //   alert('登录失败')
+    // }
+
+    //if多分支
+    let sorce = Number(prompt('请输入成绩'))
+    if (sorce >= 90) {
+      alert('优秀')
+    } else if (sorce >= 80) {
+      alert('良好')
+    } else if (sorce >= 70) {
+      alert('中等')
+    } else if (sorce >= 60) {
+      alert('及格')
+    } else {
+      alert('不及格')
+    }
+
+  </script>
+</body>
+
+</html>
