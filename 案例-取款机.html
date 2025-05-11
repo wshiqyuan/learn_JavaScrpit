@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    let balance = 100
+    while (true) {
+      let select = Number(prompt(
+        `请您选择操作：\n
+        1. 取款\n
+        2. 存款\n
+        3. 查询余额\n
+        4. 退出`))
+      if (select === 4) {
+        break
+      }
+      switch (select) {
+        case 1:
+          let withdraw = Number(prompt('请输入取款金额'))
+          if (withdraw > balance) {
+            alert('余额不足')
+          } else {
+            balance -= withdraw
+          }
+          break
+        case 2:
+          let deposit = Number(prompt('请输入存款金额'))
+          balance += deposit
+          break
+        case 3:
+          alert(`您的余额是${balance}`)
+          break
+        default:
+          alert('无效操作')
+      }
+    }
+  </script>
+</body>
+
+</html>
