@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    // 定义一个数组
+    let arr = ['html', 'css', 'javascript']
+
+    // 1. push 动态向数组的尾部添加一个单元
+    arr.push('Nodejs')
+    console.log(arr)
+    arr.push('Vue')
+
+    // 2. unshit 动态向数组头部添加一个单元
+    arr.unshift('VS Code')
+    console.log(arr)
+
+    // 3. splice 动态删除任意单元
+    splice(1)// 从索引值为1的位置开始删除后续所有元素
+    arr.splice(2, 1) // 从索引值为2的位置开始删除1个单元
+    console.log(arr)
+
+    // 4. pop 删除最后一个单元
+    arr.pop()
+    console.log(arr)
+
+    // 5. shift 删除第一个单元
+    arr.shift()
+    console.log(arr)
+  </script>
+</body>
+
+</html>
