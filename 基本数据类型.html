@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    // js弱数字类型的语言 只有赋值了，才知道是什么数据类型
+    // let num = 10 // number类型
+    // 小案例：计算圆的面积
+    // const PI = 3.14
+    // let r = prompt('请输入半径')
+    // let s
+    // s = PI * r * r
+    // document.write('圆的面积是：' + s)
+
+    // NaN表示计算错误
+    // NaN是粘性的。任何对NaN进行的计算都是NaN
+    // console.log('pink' - 2)
+    // console.log(NaN - 2)
+    // console.log(NaN + 2)
+    // console.log(NaN * 2)
+    // console.log(NaN / 2)
+    // console.log(NaN ** 2)
+    // console.log(NaN === NaN)// false
+
+    // 单引号（''）双引号（""）或反引号（`）包裹的数据都叫字符串，推荐使用单引号
+    // let str = 'hello' // string类型
+    // 外双内单外单内双或者加转义符'\'
+    // console.log('我是'高富帅'程序员')//false
+    // console.log('我是"高富帅"程序员')//true
+    //console.log("我是'高富帅'程序员")//true
+    // console.log(我是\'高富帅\'程序员')//true
+    // 字符串拼接
+    // let str1 = 'hello'
+    // let str2 = 'world'
+    // console.log(str1 + str2)
+    // 模板字符串，外面用反引号里面用${}
+    // let age = 18
+    // document.write(`我今年${age}岁`)
+    // 小案例
+    // let userName = prompt('请输入您的姓名:')
+    // let age = prompt('请输入您的年龄:')
+    // document.write(`我叫${userName}，今年${age}岁`)
+
+    // 布尔值类型
+    // true和false是布尔型的两个字面量
+    // console.log(3 > 4)
+    // let isCool = true
+    // console.log(isCool)
+
+    // 未定义类型
+    // let num
+    // console.log(num)
+
+    // null类型
+    // let num = null
+    // console.log(num)
+    // console.log(null + 2)// 2
+    // console.log(undefined + 2)// NaN;
+
+    // 数据类型检测
+    // let num = 10
+    // console.log(typeof num);
+    // console.log(typeof 'hello')
+    // console.log(typeof true)
+
+    // 数据类型转换
+    //隐形转换
+    // console.log(2 + 2)
+    // console.log('2' + 2) // '22'
+    // console.log('pink' + 2) // 'pink2'
+    // console.log(2 - '2')
+    // console.log(+'123')//转换为数字型
+
+    //显示转换
+    // let num = Number(prompt('请输入年薪:'))
+    // console.log(num)
+    // 取整数
+    // console.log(parseInt('12px'))
+    // ------------------------------------------
+    // parseInt() 只能转换整数，parseFloat() 可以转换小数
+    // console.log(parseFloat('12.5px'))
+    // console.log(parseFloat('abc12.5px')) // NaN
+
+    // 小案例
+    // let num1 = Number(prompt('请输入第一个数字:'))
+    // let num2 = Number(prompt('请输入第二个数字:'))
+    // document.write(`这两个数字的和是：${num1 + num2}`)
+
+    //tips
+    console.log(undefined + 3)//NaN
+    console.log(null == undefined)//true
+    console.log(null === undefined)//false
+
+
+  </script>
+</body>
+
+</html>
